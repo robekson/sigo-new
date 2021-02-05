@@ -51,22 +51,11 @@ spring:
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
-  mail: 
-    host: smtp.gmail.com
-    port: 587
-    username: robeksonjhipster@gmail.com
-    password: jhipster 
-    protocol: smtp
-    tls: true
-    properties.mail.smtp:
-            auth: true
-            starttls.enable: true
-            ssl.trust: smtp.gmail.com 
   mail:   
     host: smtp.gmail.com
     port: 587
     username: robeksonjhipster@gmail.com
-    password: jhipster 
+    password: jhipster123
     protocol: smtp
     tls: true
     properties.mail.smtp:

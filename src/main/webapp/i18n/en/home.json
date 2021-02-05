@@ -1,11 +1,11 @@
 {
   "home": {
-    "title": "Welcome, Java Hipster!",
-    "subtitle": "This is your homepage",
+    "title": "Welcome, SIGO!",
+    "subtitle": "System for Textile Industry",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     },
-    "question": "If you have any question on JHipster:",
+    "question": "The automated SIGO management system allows companies to optimize the end-to-end manufacturing and sales process, including solid planning, sales and inventory management, process scheduling, cost management and production , reducing total manufacturing costs. Therefore, measures are needed to solve the difficulties of the industry management. Solid plans, sales and inventory management, textile",
     "link": {
       "homepage": "JHipster homepage",
       "stackoverflow": "JHipster on Stack Overflow",

@@ -1,11 +1,11 @@
 {
   "home": {
-    "title": "Bem vindo, Java Hipster!",
-    "subtitle": "Esta é a página principal",
+    "title": "Bem vindo ao SIGO!",
+    "subtitle": "Sistema para Indústria Textil",
     "logged": {
       "message": "Você está logado como \"{{username}}\"."
     },
-    "question": "Em caso de dúvida sobre o JHipster:",
+    "question": "O sistema automatizado de gestão SIGO permitem que as empresas otimizem o processo de fabricação e venda de ponta a ponta, incluindo planejamentos sólidos, gerenciamento de vendas e estoque, agendamento de processos, gestão de custos e produção, reduzindo os custos totais de fabricação. Portanto, são necessárias medidas para solucionar as dificuldades da gestão de indústria textil. ",
     "link": {
       "homepage": "Página principal JHipster",
       "stackoverflow": "JHipster no Stack Overflow",
