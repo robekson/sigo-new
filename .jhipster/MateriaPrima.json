@@ -1,0 +1,45 @@
+{
+  "name": "MateriaPrima",
+  "fields": [
+    {
+      "fieldName": "tipo",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "composicao",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fio",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "produto",
+      "otherEntityRelationshipName": "materiaPrima",
+      "relationshipName": "produto",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "fornece",
+      "otherEntityRelationshipName": "materiaPrima",
+      "relationshipName": "fornece",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210205030012",
+  "entityTableName": "materia_prima",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["sigo"]
+}
