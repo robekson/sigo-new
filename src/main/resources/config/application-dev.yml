@@ -37,9 +37,10 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./target/h2db/db/sigo;DB_CLOSE_DELAY=-1
+    #url: jdbc:h2:file:./target/h2db/db/sigo;DB_CLOSE_DELAY=-1
+    url: jdbc:postgresql://database-1.cfzqvvr5by5c.us-east-2.rds.amazonaws.com:5432/sigo
     username: sigo
-    password:
+    password: password
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -98,7 +99,7 @@ jhipster:
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
   mail: # specific JHipster mail property, for standard properties see MailProperties
-    base-url: http://127.0.0.1:8080
+    base-url: http://sigo-env.eba-vgurijnc.us-east-2.elasticbeanstalk.com
   metrics:
     logs: # Reports metrics in the logs
       enabled: false
