@@ -22,7 +22,6 @@
         <table class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
-                    <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="codigo"><span jhiTranslate="sigoApp.normas.codigo">Codigo</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="titulo"><span jhiTranslate="sigoApp.normas.titulo">Titulo</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="date"><span jhiTranslate="sigoApp.normas.date">Date</span> <fa-icon icon="sort"></fa-icon></th>
