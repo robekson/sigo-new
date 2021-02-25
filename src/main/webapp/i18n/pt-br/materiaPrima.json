@@ -3,15 +3,15 @@
     "materiaPrima": {
       "home": {
         "title": "Materia Primas",
-        "createLabel": "Criar novo Materia Prima",
+        "createLabel": "Cadastrar Materia Prima",
         "createOrEditLabel": "Criar ou editar Materia Prima",
-        "notFound": "Nenhum Materia Prima encontrado"
+        "notFound": "Nenhuma Materia Prima encontrado"
       },
-      "created": "Um novo Materia Prima foi criado com o identificador {{ param }}",
-      "updated": "Um Materia Prima foi atualizado com o identificador {{ param }}",
-      "deleted": "Um Materia Prima foi excluído com o identificador {{ param }}",
+      "created": "Uma nova Materia Prima foi criado com o identificador {{ param }}",
+      "updated": "Uma Materia Prima foi atualizado com o identificador {{ param }}",
+      "deleted": "Uma Materia Prima foi excluído com o identificador {{ param }}",
       "delete": {
-        "question": "Tem certeza de que deseja excluir Materia Prima {{ id }}?"
+        "question": "Tem certeza de que deseja excluir a Materia Prima {{ id }}?"
       },
       "detail": {
         "title": "Materia Prima"

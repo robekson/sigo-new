@@ -3,15 +3,15 @@
     "normas": {
       "home": {
         "title": "Normas",
-        "createLabel": "Criar novo Normas",
+        "createLabel": "Cadastrar Normas",
         "createOrEditLabel": "Criar ou editar Normas",
-        "notFound": "Nenhum Normas encontrado"
+        "notFound": "Nenhuma Norma encontrado"
       },
-      "created": "Um novo Normas foi criado com o identificador {{ param }}",
-      "updated": "Um Normas foi atualizado com o identificador {{ param }}",
-      "deleted": "Um Normas foi excluído com o identificador {{ param }}",
+      "created": "Uma nova Norma foi criado com o identificador {{ param }}",
+      "updated": "Uma Norma foi atualizado com o identificador {{ param }}",
+      "deleted": "Uma Norma foi excluído com o identificador {{ param }}",
       "delete": {
-        "question": "Tem certeza de que deseja excluir Normas {{ id }}?"
+        "question": "Tem certeza de que deseja excluir a Norma {{ id }}?"
       },
       "detail": {
         "title": "Normas"

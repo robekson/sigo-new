@@ -3,15 +3,15 @@
     "venda": {
       "home": {
         "title": "Vendas",
-        "createLabel": "Criar novo Venda",
-        "createOrEditLabel": "Criar ou editar Venda",
+        "createLabel": "Cadastrar Vendas",
+        "createOrEditLabel": "Criar ou editar Vendas",
         "notFound": "Nenhum Venda encontrado"
       },
-      "created": "Um novo Venda foi criado com o identificador {{ param }}",
-      "updated": "Um Venda foi atualizado com o identificador {{ param }}",
-      "deleted": "Um Venda foi excluído com o identificador {{ param }}",
+      "created": "Uma novo Venda foi criado com o identificador {{ param }}",
+      "updated": "Uma Venda foi atualizado com o identificador {{ param }}",
+      "deleted": "Uma Venda foi excluído com o identificador {{ param }}",
       "delete": {
-        "question": "Tem certeza de que deseja excluir Venda {{ id }}?"
+        "question": "Tem certeza de que deseja excluir a Venda {{ id }}?"
       },
       "detail": {
         "title": "Venda"

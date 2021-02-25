@@ -34,7 +34,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let funcionario of funcionarios ;trackBy: trackId">
-                    <td><a [routerLink]="['/funcionario', funcionario.id, 'view']">{{ funcionario.id }}</a></td>
+                    <!--<td><a [routerLink]="['/funcionario', funcionario.id, 'view']">{{ funcionario.id }}</a></td>-->
                     <td>{{ funcionario.nome }}</td>
                     <td>{{ funcionario.dataNascimento | date:'mediumDate' }}</td>
                     <td>{{ funcionario.dataAdmissao | date:'mediumDate' }}</td>

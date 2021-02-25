@@ -3,15 +3,15 @@
     "compra": {
       "home": {
         "title": "Compras",
-        "createLabel": "Criar novo Compra",
+        "createLabel": "Cadastrar Compra",
         "createOrEditLabel": "Criar ou editar Compra",
-        "notFound": "Nenhum Compra encontrado"
+        "notFound": "Nenhuma Compra encontrado"
       },
-      "created": "Um novo Compra foi criado com o identificador {{ param }}",
-      "updated": "Um Compra foi atualizado com o identificador {{ param }}",
-      "deleted": "Um Compra foi excluído com o identificador {{ param }}",
+      "created": "Uma nova Compra foi criada com o identificador {{ param }}",
+      "updated": "Uma Compra foi atualizada com o identificador {{ param }}",
+      "deleted": "Uma Compra foi excluído com o identificador {{ param }}",
       "delete": {
-        "question": "Tem certeza de que deseja excluir Compra {{ id }}?"
+        "question": "Tem certeza de que deseja excluir a Compra {{ id }}?"
       },
       "detail": {
         "title": "Compra"

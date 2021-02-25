@@ -31,7 +31,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let normas of normas ;trackBy: trackId">
-                    <td><a [routerLink]="['/normas', normas.id, 'view']">{{ normas.id }}</a></td>
+                    <!--<td><a [routerLink]="['/normas', normas.id, 'view']">{{ normas.id }}</a></td>-->
                     <td>{{ normas.codigo }}</td>
                     <td>{{ normas.titulo }}</td>
                     <td>{{ normas.date | date:'mediumDate' }}</td>

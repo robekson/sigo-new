@@ -3,15 +3,15 @@
     "consultoria": {
       "home": {
         "title": "Consultorias",
-        "createLabel": "Criar novo Consultoria",
+        "createLabel": "Cadastrar Consultoria",
         "createOrEditLabel": "Criar ou editar Consultoria",
-        "notFound": "Nenhum Consultoria encontrado"
+        "notFound": "Nenhuma Consultoria encontrado"
       },
-      "created": "Um novo Consultoria foi criado com o identificador {{ param }}",
-      "updated": "Um Consultoria foi atualizado com o identificador {{ param }}",
-      "deleted": "Um Consultoria foi excluído com o identificador {{ param }}",
+      "created": "Uma nova Consultoria foi criado com o identificador {{ param }}",
+      "updated": "Uma Consultoria foi atualizado com o identificador {{ param }}",
+      "deleted": "Uma Consultoria foi excluído com o identificador {{ param }}",
       "delete": {
-        "question": "Tem certeza de que deseja excluir Consultoria {{ id }}?"
+        "question": "Tem certeza de que deseja excluir a Consultoria {{ id }}?"
       },
       "detail": {
         "title": "Consultoria"

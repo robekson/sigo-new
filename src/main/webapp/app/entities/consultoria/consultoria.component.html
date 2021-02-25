@@ -22,7 +22,7 @@
         <table class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr>
-                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <!-- <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>-->
                     <th scope="col" ><span jhiTranslate="sigoApp.consultoria.nome">Nome</span></th>
                     <th scope="col" ><span jhiTranslate="sigoApp.consultoria.cnpj">Cnpj</span></th>
                     <th scope="col" ><span jhiTranslate="sigoApp.consultoria.dataContratacao">Data Contratacao</span></th>
@@ -34,7 +34,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let consultoria of consultorias ;trackBy: trackId">
-                    <td><a [routerLink]="['/consultoria', consultoria.id, 'view']">{{ consultoria.id }}</a></td>
+                    <!-- <td><a [routerLink]="['/consultoria', consultoria.id, 'view']">{{ consultoria.id }}</a></td>-->
                     <td>{{ consultoria.nome }}</td>
                     <td>{{ consultoria.cnpj }}</td>
                     <td>{{ consultoria.dataContratacao | date:'mediumDate' }}</td>

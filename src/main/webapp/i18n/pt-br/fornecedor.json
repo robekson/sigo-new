@@ -3,7 +3,7 @@
     "fornecedor": {
       "home": {
         "title": "Fornecedors",
-        "createLabel": "Criar novo Fornecedor",
+        "createLabel": "Cadastrar Fornecedor",
         "createOrEditLabel": "Criar ou editar Fornecedor",
         "notFound": "Nenhum Fornecedor encontrado"
       },

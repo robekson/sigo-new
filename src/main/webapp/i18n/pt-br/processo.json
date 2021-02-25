@@ -3,7 +3,7 @@
     "processo": {
       "home": {
         "title": "Processos",
-        "createLabel": "Criar novo Processo",
+        "createLabel": "Cadastrar Processo",
         "createOrEditLabel": "Criar ou editar Processo",
         "notFound": "Nenhum Processo encontrado"
       },

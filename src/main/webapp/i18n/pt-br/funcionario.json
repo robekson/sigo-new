@@ -3,7 +3,7 @@
     "funcionario": {
       "home": {
         "title": "Funcionarios",
-        "createLabel": "Criar novo Funcionario",
+        "createLabel": "Cadastrar Funcionario",
         "createOrEditLabel": "Criar ou editar Funcionario",
         "notFound": "Nenhum Funcionario encontrado"
       },
