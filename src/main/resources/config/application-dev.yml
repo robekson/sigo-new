@@ -38,9 +38,9 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     #url: jdbc:h2:file:./target/h2db/db/sigo;DB_CLOSE_DELAY=-1
-    url: jdbc:postgresql://database-1.cfzqvvr5by5c.us-east-2.rds.amazonaws.com:5432/sigo
-    username: sigo
-    password: password
+    url: jdbc:postgresql://database-2.cfzqvvr5by5c.us-east-2.rds.amazonaws.com:5432/sigodb
+    username: root
+    password: password 
     hikari:
       poolName: Hikari
       auto-commit: false
