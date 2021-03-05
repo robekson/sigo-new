@@ -9,6 +9,7 @@ export interface ICompra {
   valor?: number;
   produtos?: IProduto[];
   clienteId?: number;
+  clienteCnpj?: string;
 }
 
 export class Compra implements ICompra {
@@ -19,6 +20,7 @@ export class Compra implements ICompra {
     public tamanho?: string,
     public valor?: number,
     public produtos?: IProduto[],
-    public clienteId?: number
+    public clienteId?: number,
+    public clienteCnpj?: string
   ) {}
 }

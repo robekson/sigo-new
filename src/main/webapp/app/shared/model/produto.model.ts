@@ -6,6 +6,7 @@ export interface IProduto {
   nome?: string;
   cores?: string;
   insumo?: string;
+  materiaPrimaNome?: string;
   materiaPrimaId?: number;
   vendaId?: number;
   compras?: ICompra[];
@@ -18,6 +19,7 @@ export class Produto implements IProduto {
     public nome?: string,
     public cores?: string,
     public insumo?: string,
+    public materiaPrimaNome?: string,
     public materiaPrimaId?: number,
     public vendaId?: number,
     public compras?: ICompra[]

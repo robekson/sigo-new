@@ -22,33 +22,34 @@
         <table class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
-                    <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
+                   <!-- <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>-->
                     <th scope="col"  jhiSortBy="referencia"><span jhiTranslate="sigoApp.produto.referencia">Referencia</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="nome"><span jhiTranslate="sigoApp.produto.nome">Nome</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="cores"><span jhiTranslate="sigoApp.produto.cores">Cores</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="insumo"><span jhiTranslate="sigoApp.produto.insumo">Insumo</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="materiaPrimaId"><span jhiTranslate="sigoApp.produto.materiaPrima">Materia Prima</span> <fa-icon icon="sort"></fa-icon></th>
-                    <th scope="col"  jhiSortBy="vendaId"><span jhiTranslate="sigoApp.produto.venda">Venda</span> <fa-icon icon="sort"></fa-icon></th>
+                    <!-- <th scope="col"  jhiSortBy="vendaId"><span jhiTranslate="sigoApp.produto.venda">Venda</span> <fa-icon icon="sort"></fa-icon></th>-->
                     <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let produto of produtos ;trackBy: trackId">
-                    <td><a [routerLink]="['/produto', produto.id, 'view']">{{ produto.id }}</a></td>
+                   <!--  <td><a [routerLink]="['/produto', produto.id, 'view']">{{ produto.id }}</a></td>-->
                     <td>{{ produto.referencia }}</td>
                     <td>{{ produto.nome }}</td>
                     <td>{{ produto.cores }}</td>
                     <td>{{ produto.insumo }}</td>
                     <td>
                         <div *ngIf="produto.materiaPrimaId">
-                            <a [routerLink]="['/materia-prima', produto.materiaPrimaId , 'view']" >{{ produto.materiaPrimaId }}</a>
+                            <a [routerLink]="['/materia-prima', produto.materiaPrimaId , 'view']" >{{ produto.materiaPrimaNome}}</a>
+                           
                         </div>
                     </td>
-                    <td>
+                    <!--<td>
                         <div *ngIf="produto.vendaId">
                             <a [routerLink]="['/venda', produto.vendaId , 'view']" >{{ produto.vendaId }}</a>
                         </div>
-                    </td>
+                    </td>-->
                     <td class="text-right">
                         <div class="btn-group">
                             <button type="submit"

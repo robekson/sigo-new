@@ -9,6 +9,7 @@ export interface IVenda {
   valor?: number;
   produtos?: IProduto[];
   funcionarioId?: number;
+  funcionarioNome?: string;
 }
 
 export class Venda implements IVenda {
@@ -19,6 +20,7 @@ export class Venda implements IVenda {
     public dataEntrega?: Moment,
     public valor?: number,
     public produtos?: IProduto[],
-    public funcionarioId?: number
+    public funcionarioId?: number,
+    public funcionarioNome?: string
   ) {}
 }

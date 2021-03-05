@@ -28,6 +28,8 @@ public class CompraDTO implements Serializable {
 
     private Long clienteId;
     
+    private String clienteCnpj;
+    
     public Long getId() {
         return id;
     }
@@ -114,4 +116,12 @@ public class CompraDTO implements Serializable {
             ", clienteId=" + getClienteId() +
             "}";
     }
+
+	public String getClienteCnpj() {
+		return clienteCnpj;
+	}
+
+	public void setClienteCnpj(String clienteCnpj) {
+		this.clienteCnpj = clienteCnpj;
+	}
 }

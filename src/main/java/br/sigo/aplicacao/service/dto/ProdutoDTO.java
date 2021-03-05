@@ -19,9 +19,10 @@ public class ProdutoDTO implements Serializable {
     private String cores;
 
     private String insumo;
+    
+    private String materiaPrimaNome;
 
-
-    private Long materiaPrimaId;
+	private Long materiaPrimaId;
 
     private Long vendaId;
     
@@ -80,6 +81,15 @@ public class ProdutoDTO implements Serializable {
     public void setVendaId(Long vendaId) {
         this.vendaId = vendaId;
     }
+    
+    
+    public String getMateriaPrimaNome() {
+  		return materiaPrimaNome;
+  	}
+
+  	public void setMateriaPrimaNome(String materiaPrimaNome) {
+  		this.materiaPrimaNome = materiaPrimaNome;
+  	}
 
     @Override
     public boolean equals(Object o) {

@@ -41,12 +41,12 @@
                     <td>{{ compra.valor }}</td>
                     <td>
                         <span *ngFor="let produto of compra.produtos; let last = last">
-                            <a class="form-control-static" [routerLink]="['/produto', produto?.id, 'view']">{{ produto.id }}</a>{{ last ? '' : ', ' }}
+                            <a class="form-control-static" [routerLink]="['/produto', produto?.id, 'view']">{{ produto.nome }}</a>{{ last ? '' : ', ' }}
                         </span>
                     </td>
                     <td>
                         <div *ngIf="compra.clienteId">
-                            <a [routerLink]="['/cliente', compra.clienteId , 'view']" >{{ compra.clienteId }}</a>
+                            <a [routerLink]="['/cliente', compra.clienteId , 'view']" >{{ compra.clienteCnpj }}</a>
                         </div>
                     </td>
                     <td class="text-right">

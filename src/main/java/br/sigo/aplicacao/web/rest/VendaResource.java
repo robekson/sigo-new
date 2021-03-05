@@ -1,24 +1,34 @@
 package br.sigo.aplicacao.web.rest;
 
-import br.sigo.aplicacao.service.VendaService;
-import br.sigo.aplicacao.web.rest.errors.BadRequestAlertException;
-import br.sigo.aplicacao.service.dto.VendaDTO;
-import br.sigo.aplicacao.service.dto.VendaCriteria;
-import br.sigo.aplicacao.service.VendaQueryService;
-
-import io.github.jhipster.web.util.HeaderUtil;
-import io.github.jhipster.web.util.ResponseUtil;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Optional;
+
+import javax.validation.Valid;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.sigo.aplicacao.service.FuncionarioService;
+import br.sigo.aplicacao.service.VendaQueryService;
+import br.sigo.aplicacao.service.VendaService;
+import br.sigo.aplicacao.service.dto.VendaCriteria;
+import br.sigo.aplicacao.service.dto.VendaDTO;
+import br.sigo.aplicacao.web.rest.errors.BadRequestAlertException;
+import io.github.jhipster.web.util.HeaderUtil;
+import io.github.jhipster.web.util.ResponseUtil;
 
 /**
  * REST controller for managing {@link br.sigo.aplicacao.domain.Venda}.
@@ -38,9 +48,13 @@ public class VendaResource {
 
     private final VendaQueryService vendaQueryService;
 
+    @Autowired
+    FuncionarioService funcionarioService;
+
     public VendaResource(VendaService vendaService, VendaQueryService vendaQueryService) {
         this.vendaService = vendaService;
         this.vendaQueryService = vendaQueryService;
+        // this.funcionarioService = funcionarioService;
     }
 
     /**
@@ -92,7 +106,8 @@ public class VendaResource {
     @GetMapping("/vendas")
     public ResponseEntity<List<VendaDTO>> getAllVendas(VendaCriteria criteria) {
         log.debug("REST request to get Vendas by criteria: {}", criteria);
-        List<VendaDTO> entityList = vendaQueryService.findByCriteria(criteria);
+        List<VendaDTO> entityList = vendaQueryService.findByCriteria(criteria);        
+        entityList.forEach(v -> v.setFuncionarioNome(v.getFuncionarioId() !=null ? funcionarioService.findOne(v.getFuncionarioId()).get().getNome():""));        
         return ResponseEntity.ok().body(entityList);
     }
 

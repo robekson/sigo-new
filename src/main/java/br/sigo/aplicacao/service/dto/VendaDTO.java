@@ -25,6 +25,8 @@ public class VendaDTO implements Serializable {
 
     private Long funcionarioId;
     
+    private String funcionarioNome;
+    
     public Long getId() {
         return id;
     }
@@ -102,4 +104,12 @@ public class VendaDTO implements Serializable {
             ", funcionarioId=" + getFuncionarioId() +
             "}";
     }
+
+	public String getFuncionarioNome() {
+		return funcionarioNome;
+	}
+
+	public void setFuncionarioNome(String funcionarioNome) {
+		this.funcionarioNome = funcionarioNome;
+	}
 }
