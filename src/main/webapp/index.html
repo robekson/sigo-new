@@ -81,6 +81,18 @@
     <script src="content/js/jquery.min.js"></script>
     <script src="content/js/bootstrap.bundle.min.js"></script>
     <script src="content/js/jquery-3.3.1.js"></script>
+
+    <script src="content/js/tabela/jquery.dataTables.min.js"></script>
+    <script src="content/js/tabela/dataTables.bootstrap.min.js"></script>
+    <script src="content/js/tabela/dataTables.buttons.min.js"></script>
+    <script src="content/js/tabela/buttons.bootstrap.min.js"></script>
+    <script src="content/js/tabela/jszip.min.js"></script>
+    <script src="content/js/tabela/pdfmake.min.js"></script>
+    <script src="content/js/tabela/vfs_fonts.js"></script>
+    <script src="content/js/tabela/buttons.html5.min.js"></script>
+    <script src="content/js/tabela/buttons.print.min.js"></script>
+    <script src="content/js/tabela/buttons.colVis.min.js"></script>
+
     <script type="text/javascript" language="javascript">
         // show an error message if the app loading takes more than 5 sec
         window.onload=function() {
@@ -92,6 +104,35 @@
                 errorElm.style.display = "block";
             }
         }
+
+    $( document ).ready(function() {
+         console.log( "ready!" );
+         checkContainer();
+    });
+
+    function checkContainer () {
+        if(!$('#divTableCompra').is(':visible')){
+          setTimeout(checkContainer, 50);
+        } else {
+            createBotaoExportCompra();
+        }
+     }
+
+    function createBotaoExportCompra() {
+        var table = $('#idTableCompra').DataTable( {
+            lengthChange: false,
+            ordering: false,
+            paging: false,
+            searching: false,
+            info: false,
+            buttons: ['excel', 'pdf']
+            });
+
+       table.buttons().container().appendTo( '#idTableCompra_wrapper .col-sm-12:eq(0)' );
+
+    }
+
+
     </script>
     <!-- uncomment this for adding service worker
         <script>

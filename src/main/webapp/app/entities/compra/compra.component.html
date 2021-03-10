@@ -18,8 +18,14 @@
         <span jhiTranslate="sigoApp.compra.home.notFound">No compras found</span>
     </div>
 
-    <div class="table-responsive" id="entities" *ngIf="compras && compras.length > 0">
-        <table class="table table-striped" aria-describedby="page-heading">
+     <a onclick="createBotaoExportCompra()">
+        <span>
+            <i class="fas fa-download fa-w-14 fa-fw fa-2x" aria-hidden="true"></i>
+        </span>
+    </a>
+
+    <div class="table-responsive" id="divTableCompra" *ngIf="compras && compras.length > 0">
+        <table id="idTableCompra" class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr>
                     <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
