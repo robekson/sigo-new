@@ -19,7 +19,7 @@
     </div>
 
     <div class="table-responsive" id="entities" *ngIf="normas && normas.length > 0">
-        <table class="table table-striped" aria-describedby="page-heading">
+        <table id="idTableNormas"  class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
                     <th scope="col"  jhiSortBy="codigo"><span jhiTranslate="sigoApp.normas.codigo">Codigo</span> <fa-icon icon="sort"></fa-icon></th>

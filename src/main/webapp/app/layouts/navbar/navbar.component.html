@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" routerLink="normas" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                        <a onclick="checkContainerTableNorma()" class="dropdown-item" routerLink="normas" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
                             <i class="fas fa-book-open" aria-hidden="true"></i>
                             <span jhiTranslate="global.menu.entities.normas">Normas</span>
                         </a>
@@ -66,7 +66,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" routerLink="compra" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                        <a  onclick="checkContainerTableCompra()" class="dropdown-item" routerLink="compra" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
                             <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
                             <span jhiTranslate="global.menu.entities.compra">Compra</span>
                         </a>

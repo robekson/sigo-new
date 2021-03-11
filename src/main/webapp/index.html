@@ -94,6 +94,13 @@
     <script src="content/js/tabela/buttons.colVis.min.js"></script>
 
     <script type="text/javascript" language="javascript">
+        $( document ).ready(function() {
+	         console.log( "ready!" );
+	         //checkContainerTableCompra();
+             //checkContainerTableNorma();
+			
+	    });
+
         // show an error message if the app loading takes more than 5 sec
         window.onload=function() {
             setTimeout(showError, 4000);
@@ -105,32 +112,50 @@
             }
         }
 
-    $( document ).ready(function() {
-         console.log( "ready!" );
-         checkContainer();
-    });
+	    function checkContainerTableCompra () {
+	        if(!$('#idTableCompra').is(':visible')){
+	          setTimeout(checkContainerTableCompra, 50);
+	        } else {
+	            createBotaoExportCompra();
+	        }
+	     }
 
-    function checkContainer () {
-        if(!$('#divTableCompra').is(':visible')){
-          setTimeout(checkContainer, 50);
-        } else {
-            createBotaoExportCompra();
-        }
-     }
+        function checkContainerTableNorma () {
+	        if(!$('#idTableNormas').is(':visible')){
+	          setTimeout(checkContainerTableNorma, 50);
+	        } else {
+	            createBotaoExportNormas();
+	        }
+	     }
 
-    function createBotaoExportCompra() {
-        var table = $('#idTableCompra').DataTable( {
-            lengthChange: false,
-            ordering: false,
-            paging: false,
-            searching: false,
-            info: false,
-            buttons: ['excel', 'pdf']
-            });
+	    function createBotaoExportCompra() {
+	        var table = $('#idTableCompra').DataTable( {
+	            lengthChange: false,
+	            ordering: false,
+	            paging: false,
+	            searching: true,
+	            info: false,
+	            buttons: ['excel', 'pdf']
+	            });
+	
+	       table.buttons().container().appendTo( '#idTableCompra_wrapper .col-sm-6:eq(0)' );
+	
+	    }
 
-       table.buttons().container().appendTo( '#idTableCompra_wrapper .col-sm-12:eq(0)' );
+        function createBotaoExportNormas() {
+	        var table = $('#idTableNormas').DataTable( {
+	            lengthChange: false,
+	            ordering: false,
+	            paging: false,
+	            searching: true,
+	            info: false,
+	            buttons: ['excel', 'pdf']
+	            });
+	
+	       table.buttons().container().appendTo( '#idTableNormas_wrapper .col-sm-6:eq(0)' );
+	
+	    }
 
-    }
 
 
     </script>
