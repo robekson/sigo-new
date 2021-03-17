@@ -27,7 +27,7 @@
                 <dt><span jhiTranslate="sigoApp.compra.produto">Produto</span></dt>
                 <dd>
                     <span *ngFor="let produto of compra.produtos; let last = last">
-                        <a [routerLink]="['/produto', produto?.id, 'view']">{{ produto.id }}</a>{{ last ? '' : ', ' }}
+                        <a [routerLink]="['/produto', produto?.id, 'view']">{{ produto.id }}-{{ produto.nome }}</a>{{ last ? '' : ', ' }}
                     </span>
                 </dd>
                 <dt><span jhiTranslate="sigoApp.compra.cliente">Cliente</span></dt>

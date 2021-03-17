@@ -18,7 +18,7 @@
         <span jhiTranslate="sigoApp.normas.home.notFound">No normas found</span>
     </div>
 
-    <div class="table-responsive" id="entities" *ngIf="normas && normas.length > 0">
+    <div class="table-responsive" id="entities" *ngIf="normas && normas.length > 0" style="overflow-x: hidden;">
         <table id="idTableNormas"  class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">

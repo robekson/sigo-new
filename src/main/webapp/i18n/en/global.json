@@ -1,19 +1,19 @@
 {
   "global": {
-    "title": "Sigo",
+    "title": "Integrated Management and Operation System",
     "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
     "menu": {
       "home": "Home",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
-        "main": "Entities",
+        "main": "Modules",
         "funcionario": "Funcionario",
         "normas": "Normas",
         "consultoria": "Consultoria",
         "fornecedor": "Fornecedor",
         "produto": "Produto",
         "cliente": "Cliente",
-        "compra": "Compra",
+        "compra": "Relatorio Compra",
         "venda": "Venda",
         "fornece": "Fornece",
         "materiaPrima": "Materia Prima",
@@ -148,5 +148,5 @@
       "not.image": "File was expected to be an image but was found to be \"{{ fileType }}\""
     }
   },
-  "footer": "This is your footer"
+  "footer": " "
 }

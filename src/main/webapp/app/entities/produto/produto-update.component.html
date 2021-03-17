@@ -51,7 +51,7 @@
                     <label class="form-control-label" jhiTranslate="sigoApp.produto.materiaPrima" for="field_materiaPrima">Materia Prima</label>
                     <select class="form-control" id="field_materiaPrima" name="materiaPrima" formControlName="materiaPrimaId">
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="materiaPrimaOption.id" *ngFor="let materiaPrimaOption of materiaprimas; trackBy: trackById">{{ materiaPrimaOption.id }}</option>
+                        <option [ngValue]="materiaPrimaOption.id" *ngFor="let materiaPrimaOption of materiaprimas; trackBy: trackById">{{ materiaPrimaOption.composicao }}</option>
                     </select>
                 </div>
 

@@ -18,8 +18,8 @@
         <span jhiTranslate="sigoApp.processo.home.notFound">No processos found</span>
     </div>
 
-    <div class="table-responsive" id="entities" *ngIf="processos && processos.length > 0">
-        <table class="table table-striped" aria-describedby="page-heading">
+    <div class="table-responsive" id="entities" *ngIf="processos && processos.length > 0" style="overflow-x: hidden;">
+        <table id="idTableProcesso" class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr>
                     <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>

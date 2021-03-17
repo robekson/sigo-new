@@ -19,7 +19,7 @@
     </div>
 
 
-    <div class="table-responsive" id="divTableCompra" *ngIf="compras && compras.length > 0">
+    <div class="table-responsive" id="divTableCompra" *ngIf="compras && compras.length > 0" style="overflow-x: hidden;">
         <table id="idTableCompra" class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr>
@@ -58,7 +58,7 @@
                                 <fa-icon icon="eye"></fa-icon>
                             </button>
 
-                            <button type="submit"
+                            <!--<button type="submit"
                                     [routerLink]="['/compra', compra.id, 'edit']"
                                     class="btn btn-primary btn-sm">
                                 <fa-icon icon="pencil-alt"></fa-icon>
@@ -67,7 +67,7 @@
                             <button type="submit" (click)="delete(compra)"
                                     class="btn btn-danger btn-sm">
                                 <fa-icon icon="times"></fa-icon>
-                            </button>
+                            </button>-->
                         </div>
                     </td>
                 </tr>

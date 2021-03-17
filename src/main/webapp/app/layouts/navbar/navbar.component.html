@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark navbar-expand-md bg-dark">
     <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
         <span class="logo-img"></span>
-        <span jhiTranslate="global.title" class="navbar-title">Sigo</span> <span class="navbar-version">{{ version }}</span>
+        <span jhiTranslate="global.title" class="navbar-title">Sigo</span> <!--<span class="navbar-version">{{ version }}</span>-->
     </a>
     <a class="navbar-toggler d-lg-none" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
         <fa-icon icon="bars"></fa-icon>
@@ -52,7 +52,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" routerLink="produto" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                        <a  onclick="checkContainerTableProduto()" class="dropdown-item" routerLink="produto" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
                             <!--<fa-icon icon="" [fixedWidth]="true"></fa-icon>-->
                             <i class="fas fa-socks" aria-hidden="true"></i>
                             <span jhiTranslate="global.menu.entities.produto">Produto</span>
@@ -67,7 +67,8 @@
                     </li>
                     <li>
                         <a  onclick="checkContainerTableCompra()" class="dropdown-item" routerLink="compra" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+                            <!--<i class="fas fa-money-bill-wave" aria-hidden="true"></i>-->
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
                             <span jhiTranslate="global.menu.entities.compra">Compra</span>
                         </a>
                     </li>
@@ -92,7 +93,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" routerLink="processo" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                        <a onclick="checkContainerTableProcesso()" class="dropdown-item" routerLink="processo" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
                             <!--<fa-icon icon="" [fixedWidth]="true"></fa-icon>-->
                              <i class="fas fa-cog" aria-hidden="true"></i>
                             <span jhiTranslate="global.menu.entities.processo">Processo</span>

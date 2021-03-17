@@ -18,8 +18,8 @@
         <span jhiTranslate="sigoApp.produto.home.notFound">No produtos found</span>
     </div>
 
-    <div class="table-responsive" id="entities" *ngIf="produtos && produtos.length > 0">
-        <table class="table table-striped" aria-describedby="page-heading">
+    <div class="table-responsive" id="entities" *ngIf="produtos && produtos.length > 0" style="overflow-x: hidden;">
+        <table id="idTableProduto" class="table table-striped" aria-describedby="page-heading">
             <thead>
                 <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
                    <!-- <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>-->

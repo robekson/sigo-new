@@ -5,7 +5,7 @@
     "logged": {
       "message": "Você está logado como \"{{username}}\"."
     },
-    "question": "O sistema automatizado de gestão SIGO permitem que as empresas otimizem o processo de fabricação e venda de ponta a ponta, incluindo planejamentos sólidos, gerenciamento de vendas e estoque, agendamento de processos, gestão de custos e produção, reduzindo os custos totais de fabricação. Portanto, são necessárias medidas para solucionar as dificuldades da gestão de indústria textil. ",
+    "question": "O sistema automatizado de gestão SIGO permitem que as empresas otimizem o processo de fabricação e venda de ponta a ponta, incluindo planejamentos sólidos, gerenciamento de vendas e estoque, agendamento de processos, gestão de custos e produção, reduzindo os custos totais de fabricação.",
     "link": {
       "homepage": "Página principal JHipster",
       "stackoverflow": "JHipster no Stack Overflow",

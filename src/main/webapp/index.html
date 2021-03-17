@@ -128,6 +128,22 @@
 	        }
 	     }
 
+        function checkContainerTableProduto () {
+	        if(!$('#idTableProduto').is(':visible')){
+	          setTimeout(checkContainerTableProduto, 50);
+	        } else {
+	            createBotaoExportProduto();
+	        }
+	     }
+
+        function checkContainerTableProcesso() {
+	        if(!$('#idTableProcesso').is(':visible')){
+	          setTimeout(checkContainerTableProcesso, 50);
+	        } else {
+	            createBotaoExportProcesso();
+	        }
+	     }
+
 	    function createBotaoExportCompra() {
 	        var table = $('#idTableCompra').DataTable( {
 	            lengthChange: false,
@@ -135,7 +151,10 @@
 	            paging: false,
 	            searching: true,
 	            info: false,
-	            buttons: ['excel', 'pdf']
+	            buttons: ['excel', 'pdf'],
+		        oLanguage: {
+		            "sSearch": " Filtro: "
+		        }
 	            });
 	
 	       table.buttons().container().appendTo( '#idTableCompra_wrapper .col-sm-6:eq(0)' );
@@ -149,12 +168,49 @@
 	            paging: false,
 	            searching: true,
 	            info: false,
-	            buttons: ['excel', 'pdf']
+		        oLanguage: {
+		            "sSearch": " Filtro: "
+		        }
 	            });
 	
-	       table.buttons().container().appendTo( '#idTableNormas_wrapper .col-sm-6:eq(0)' );
+	       table.buttons().container().appendTo( '#idTableNormas_wrapper .col-sm-4:eq(0)' );
 	
 	    }
+
+
+        function createBotaoExportProduto() {
+	        var table = $('#idTableProduto').DataTable( {
+	            lengthChange: false,
+	            ordering: false,
+	            paging: false,
+	            searching: true,
+	            info: false,
+		        oLanguage: {
+		            "sSearch": " Filtro: "
+		        }
+	            });
+	
+	       table.buttons().container().appendTo( '#idTableProduto_wrapper .col-sm-4:eq(0)' );
+	
+	    }
+
+
+        function createBotaoExportProcesso() {
+	        var table = $('#idTableProcesso').DataTable( {
+	            lengthChange: false,
+	            ordering: false,
+	            paging: false,
+	            searching: true,
+	            info: false,
+		        oLanguage: {
+		            "sSearch": " Filtro: "
+		        }
+	            });
+	
+	       table.buttons().container().appendTo( '#idTableProcesso_wrapper .col-sm-4:eq(0)' );
+	
+	    }
+
 
 
 
