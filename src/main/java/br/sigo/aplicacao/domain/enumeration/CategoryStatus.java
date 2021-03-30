@@ -4,7 +4,8 @@ package br.sigo.aplicacao.domain.enumeration;
  * The CategoryStatus enumeration.
  */
 public enum CategoryStatus {
-    EM_VIGOR("Em Vigor");
+    EM_VIGOR("Em Vigor"),
+    CANCELADA("Cancelada");
 
     private final String value;
 
